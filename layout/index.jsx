@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./layout.module.css";
 import SideBar from "@/components/sidebar/sidebar";
+import Header from "@/components/header/header";
 
 const Layout = ({ children }) => {
   return (
@@ -9,7 +10,12 @@ const Layout = ({ children }) => {
         <div className={styles.colOne}>
           <SideBar />
         </div>
-        <div className={styles.colTwo}>{children}</div>
+        <div className={styles.colTwo}>
+          <div>
+            <Header />
+          </div>
+          {children}
+        </div>
       </div>
     </>
   );

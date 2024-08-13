@@ -1,0 +1,67 @@
+.headerContain {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24px;
+  padding: 24px;
+}
+
+.colOne {
+  width: 50%;
+}
+
+.colTwo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.formWrap {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  gap: 19px;
+  width: 376px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.inputForm {
+  width: 100%;
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+  font-family: "Mona-Sans", sans-serif;
+}
+
+.inputForm::placeholder {
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #6e6e6e;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Mona-Sans", sans-serif;
+}
+
+.userName h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+}
+
+.userName p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.4px;
+  text-align: left;
+}
