@@ -1,0 +1,17 @@
+.LoginContain {
+  display: flex;
+  background-color: #eaf9f0;
+  height: 100vh;
+}
+
+.colOne {
+  width: 60%;
+}
+
+.colTwo {
+  flex: 1;
+  background-image: url("../public/assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

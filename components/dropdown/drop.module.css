@@ -1,0 +1,151 @@
+.salesTab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.colJoin {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.colJoin h2 {
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdownToggle {
+  background-color: #ffffff;
+  color: #0d0d0d;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.dropdownMenu {
+  position: relative;
+  top: 100%;
+  margin: 0px 0px 0px 16px;
+  left: 0;
+  list-style: none;
+  background-color: white;
+  z-index: 1000;
+}
+
+.dropdownItem {
+  padding: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdownItem2 {
+  padding: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mona-Sans", sans-serif;
+}
+
+.dropdownItem3 {
+  padding: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Mona-Sans", sans-serif;
+}
+
+.dropdownItem li {
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #3d3d3d;
+}
+
+.dropdownItem p {
+  width: 31px;
+  height: 22px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 50px;
+  background-color: #fef2f2;
+  color: #f64c4c;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: left;
+}
+
+.dropdownItem2 p {
+  width: 31px;
+  height: 22px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 50px;
+  background-color: #fffaf5;
+  color: #fea237;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: left;
+}
+
+.dropdownItem3 p {
+  width: 31px;
+  height: 22px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 50px;
+  background-color: #eaf9f0;
+  color: #2ec66b;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.4px;
+  text-align: left;
+}
+.otherMenus {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+
+.otherMenus1 {
+  background-color: #eaf9f0;
+  border-left: 4px solid #2ec66b;
+  padding: 16px;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.otherMenus2 {
+  color: #0d0d0d;
+  padding: 16px;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  cursor: pointer;
+}

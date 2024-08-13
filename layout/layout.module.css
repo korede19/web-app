@@ -1,0 +1,17 @@
+.pageContainer {
+  width: 100%;
+  display: flex;
+}
+
+.colOne {
+  width: 20%;
+  background-color: #fff;
+  height: 100vh;
+  padding: 54px 16px;
+}
+
+.colTwo {
+  flex: 1;
+  background-color: #eaf9f0;
+  height: 100vh;
+}
