@@ -1,0 +1,14 @@
+.Container {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  gap: 22px;
+}
+
+.colOne {
+  width: 70%;
+}
+
+.colTwo {
+  width: 30%;
+}

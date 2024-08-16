@@ -1,0 +1,37 @@
+.chartContain {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #fbfefc;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.rowOne {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rowOne h2 {
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.rowOne select {
+  border: 0.5px solid #e1e1e1;
+  padding: 8px 14px 8px 14px;
+  border-radius: 4px;
+  border: 0.5px 0px 0px 0px;
+  opacity: 0px;
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6e6e6e;
+  outline: none;
+}

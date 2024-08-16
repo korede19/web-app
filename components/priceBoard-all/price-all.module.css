@@ -1,0 +1,11 @@
+.Contain {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  position: relative;
+}
+
+.Container {
+  width: 100%;
+  padding: 25px;
+}

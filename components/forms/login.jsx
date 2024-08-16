@@ -30,9 +30,11 @@ const LoginForm = () => {
           />
         </div>
         <div className={styles.btnContain}>
-          <button>
-            <p>Login</p>
-          </button>
+          <Link href="/home">
+            <button>
+              <p>Login</p>
+            </button>
+          </Link>
           <Link href="/forgetPassword">
             <h6>Forgot Password</h6>
           </Link>
