@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import PriceAll from "@/components/priceBoard-all/price-all";
 import SalesChart from "@/components/salesChart/saleschart";
 import ChartTwo from "@/components/saleschart2";
+import Orders from "@/components/orders";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
             <ChartTwo />
           </div>
         </div>
+        <Orders />
       </Layout>
     </>
   );

@@ -33,3 +33,50 @@ export const Sales = [
     profit: "loss",
   },
 ];
+
+export const HeaderSet = ["ID", "CUSTOMER", "STATUS", "DATE", "TOTAL"];
+
+export const Orders = [
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Ongoing",
+    date: "13/02/2024",
+    total: "₦999",
+  },
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Ongoing",
+    date: "13/02/2024",
+    total: "₦999",
+  },
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Ongoing",
+    date: "13/02/2024",
+    total: "₦999",
+  },
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Completed",
+    date: "12/02/2024",
+    total: "₦999",
+  },
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Completed",
+    date: "12/02/2024",
+    total: "₦999",
+  },
+  {
+    id: "#556792",
+    customer: "Felicia Joker",
+    status: "Completed",
+    date: "12/02/2024",
+    total: "₦999",
+  },
+];

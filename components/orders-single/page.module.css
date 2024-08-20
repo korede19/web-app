@@ -1,0 +1,38 @@
+.ordersContain {
+  margin: 18px 0px;
+  padding: 8px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+.ordersContain h4 {
+  font-family: "Mona-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  text-align: left;
+  width: 178.8px;
+  color: #23272e;
+}
+
+.ordersContain p {
+  font-family: "Mona-Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #23272e;
+  width: 178.8px;
+}
+
+.Ongoing {
+  color: #fea237 !important;
+  font-weight: 500 !important;
+}
+
+.Completed {
+  color: #2ec66b !important;
+  font-weight: 500 !important;
+}
