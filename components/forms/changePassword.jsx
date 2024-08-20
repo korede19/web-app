@@ -1,8 +1,36 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import styles from "./forms.module.css";
 import Image from "next/image";
+import { sendPasswordResetEmail } from "../../lib/firebase";
+import { auth } from "../../lib/firebase";
 
 const NewPassword = () => {
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
+  const [generalError, setGeneralError] = useState(null);
+
+  const handleForgotPassword = async (e) => {
+    e.preventDefault();
+    setEmailError(null);
+    setGeneralError(null);
+    setSuccessMessage(null);
+
+    // Basic form validation
+    if (!email) {
+      setEmailError("Email is required.");
+      return;
+    }
+
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setSuccessMessage("Password reset email sent! Please check your inbox.");
+    } catch (error) {
+      setGeneralError("Failed to send password reset email. Please try again.");
+    }
+  };
+
   return (
     <>
       <div className={styles.formContain}>
@@ -16,18 +44,26 @@ const NewPassword = () => {
             manage your platform with ease.
           </p>
         </div>
-        <div className={styles.inputFormcontain}>
-          <input
-            type="text"
-            className={styles.inputForm}
-            placeholder="User ID"
-          />
-        </div>
-        <div className={styles.btnContain}>
-          <button>
-            <p>Confirm User Id</p>
-          </button>
-        </div>
+        <form onSubmit={handleForgotPassword}>
+          <div className={styles.inputFormcontain}>
+            <input
+              type="Enter your Email"
+              className={styles.inputForm}
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {emailError && <p className={styles.errorMsg}>{emailError}</p>}
+          </div>
+          <div className={styles.btnContain}>
+            <button type="submit">
+              <p>Confirm User Id</p>
+            </button>
+            {generalError && <p className={styles.errorMsg}>{generalError}</p>}
+            {successMessage && (
+              <p className={styles.errorMsgSuccess}>{successMessage}</p>
+            )}
+          </div>
+        </form>
       </div>
     </>
   );
